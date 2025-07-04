@@ -1,0 +1,24 @@
+// ข้อ 14: สร้างคลาส Person
+// โจทย์: สร้างคลาส Person ที่มี properties คือ name (String) และ age (int) และมีเมธอด introduce() ที่จะพิมพ์ข้อความแนะนำตัวออกมา
+
+// ข้อจำกัด:
+
+// สร้าง object จากคลาส Person แล้วเรียกใช้เมธอด introduce()
+
+class Person {
+  String _name;
+  int _age;
+
+  Person(this._name, this._age) {}
+
+  void introduce() {
+    print("Hi! My name's $_name and i'm $_age years old.");
+  }
+}
+
+void main() {
+  Person man1 = Person("Phornchai", 27);
+  man1.introduce();
+}
+
+//Run on DartPad
