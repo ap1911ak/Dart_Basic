@@ -1,0 +1,27 @@
+// /ข้อ 10: ตัดเกรดอย่างง่าย
+// โจทย์: กำหนดคะแนนสอบในตัวแปร (0-100) แล้วเขียนโปรแกรมตัดเกรดตามเงื่อนไข:
+
+// > 80 ได้เกรด A
+// > 70 ได้เกรด B
+// > 60 ได้เกรด C
+// > 50 ได้เกรด D
+// นอกนั้นได้เกรด F
+// ข้อจำกัด: ใช้ if-else if-else statement
+// ระดับกลาง (Intermediate Level)
+
+void main() {
+  int score = 66;
+  String grade = "";
+  (score > 80)
+      ? grade = "A"
+      : (score > 70)
+      ? grade = "B"
+      : (score > 60)
+      ? grade = "C"
+      : (score > 50)
+      ? grade = "D"
+      : grade = "F";
+  print("$score is a $grade Grade");
+}
+
+//Run on DartPad
